@@ -1,4 +1,4 @@
-export class TwinePub {
+export class TwineServerLibrary {
 	host: string;
 
 	constructor(host: string) {
