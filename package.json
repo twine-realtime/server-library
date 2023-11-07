@@ -1,6 +1,6 @@
 {
-  "name": "server-library",
-  "version": "0.0.1",
+  "name": "twine-server-library",
+  "version": "1.0.0",
   "description": "A server-side library for publishing messages to your Twine Service",
   "main": "/dist/index.js",
   "type": "module",
