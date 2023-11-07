@@ -1,4 +1,4 @@
-# Twine Client Library
+# Twine Server Library
 
 This library enables users to publish messages to their Twine Realtime service.
 
@@ -28,10 +28,14 @@ Once the constructor has been invoked, messages may be published to the twine se
 The `publish` method takes a `room` (string) and a JavaScript object that serves as the messages payload. When invoked the messages will be sent to the twine server and the message published to all subscribers of the `room`. 
 
 ```js
+twineServerLibrary.publish(room, callback); 
+```
+
+```js
 sendBtn.addEventListener('click', (e) => {
 	e.preventDefault();
 	const message = input.value;
-	twineServerLibrary.publish(roomToPublishTo, { 
+	twineServerLibrary.publish(room, { 
 		message: "Goodmoring, friend!"
 	}); 
 })
