@@ -4,10 +4,10 @@ This library enables users to publish messages to their Twine Realtime service.
 
 ## Installation
 
-Paste this code into your JavaScript code:
+Copy this code into your JavaScript code as an ES module package:
 
 ```js
-import TwineServerLibrary from 'https://cdn.jsdelivr.net/npm/twine-server-library@1.0.0/+esm';
+import TwineServerLibrary from 'https://cdn.jsdelivr.net/npm/twine-server-library@1.0/+esm';
 ```
 
 ## Initialization
