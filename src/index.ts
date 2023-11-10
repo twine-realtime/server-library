@@ -1,8 +1,10 @@
 export default class TwineServerLibrary {
 	host: string;
+	apiKey: string;
 
-	constructor(host: string) {
+	constructor(host: string, apiKey: string) {
 		this.host = host + "/api/twine";
+		this.apiKey = apiKey;
 	};
 		
 	async publish(room: string, payload: object) {
@@ -15,7 +17,7 @@ export default class TwineServerLibrary {
 			const response = await fetch(this.host, {
 				method: "POST",
 				headers: {
-					"Authorization": "beemo",
+					"Authorization": this.apiKey,
 					"Content-Type": "application/json",
 				},
 				body: JSON.stringify(body),
