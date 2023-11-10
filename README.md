@@ -12,11 +12,11 @@ import TwineServerLibrary from 'https://cdn.jsdelivr.net/npm/twine-server-librar
 
 ## Initialization
 
-To configure the client, use the `Twine` constructor:
+To configure the client, use the `Twine` constructor, it requires a Twine `host` and `apiKey` created at deployment:
 
 ```js
 const host = 'https://your-twine-domain.com';
-const twineServerLibrary = new TwineServerLibrary(host);
+const twineServerLibrary = new TwineServerLibrary(host, apiKey);
 ```
 
 Once the constructor has been invoked, messages may be published to the twine server.
